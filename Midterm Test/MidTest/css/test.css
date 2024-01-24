@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+html {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    margin: auto;
+    width: 450px;
+    height: 50px;
+    text-align: center;
+    background-color: #8C8056;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+nav li {
+    font-size: 1rem;
+    display: inline-block;
+    padding: 15px;
+    color: #002046;
+    font-weight: bolder;
+}
+
+nav a {
+    color: #002046;
+    text-decoration: none;
+}
+
+section {
+    display: felx;
+    height: 600px;
+    background-image: url('../hero/Cryptocurrency.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+}
+section h2{
+    margin-top: 200px;
+    margin-left: 20px;
+    font-size: 3rem;
+    color: #AF996A;
+    margin-bottom: 0px;
+}
+
+section p{
+    margin-left: 20px;
+    margin-top: 0px;
+    color: #F1A023;
+    font-size: 1rem;
+}
+
+
+section a{
+    margin-left: 20px;
+    margin-top: 50px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    background-color: #433410;
+    color: #F1A023;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.content {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+aside {
+    max-width: 80%;
+    text-align: center;
+    color: #4C3410;
+    background-color: #8C8056;
+    border-radius: 15px;
+    margin: 5px;
+
+}
+aside img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 25px;
+}
+footer{
+    background-color: #002046;
+}
+footer p{
+    text-align: center;
+    color: #8C8056;
+    padding: 10px;
+    font-size: 0.75rem;
+}

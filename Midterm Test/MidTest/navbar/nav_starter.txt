@@ -1,0 +1,9 @@
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.forbes.com/advisor/investing/what-is-cryptocurrency/" target="_blank">History</a></li>
+            <li><a href="#">Market</a></li>
+        </ul>
+    </nav>
+</header>

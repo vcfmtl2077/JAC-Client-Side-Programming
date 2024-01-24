@@ -1,0 +1,5 @@
+<section>
+    <h2>Cryptocurrency</h2>
+    <p> A digital or virtual currency secured by cryptography</p>
+    <a href="./buy.html"> Buy Now </a>
+</section>
