@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ban the dishes</title>
+
+    <!-- Font Awesome Kit URL -->
+    <script src="https://kit.fontawesome.com/20d18bedad.js" crossorigin="anonymous"></script>
+    <script src="src/app.js"></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-box">
+            <a href="./index.html">
+                <img src="./assets/ban-logo-mini.svg" alt="ban the dishes logo">
+            </a>
+        </div>
+        <div class="right-box">
+            <a href="./menu.html">Menu</a>
+            <a href="#"> <i class="fas fa-globe"></i>FR</a>
+            <!-- <a id="login-index" href="./menu.html"> <i class="fas fa-user-circle"></i>Log-in</a> -->
+            <button id="login" onclick="LoggedIn()">
+                <i class="fas fa-user-circle"></i>
+                <p>Log-in</p>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <!-- Photo by Dan Gold via Unsplash -->
+            <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+                alt="gourmet burger and fries">
+
+            <div class="text">
+                <h1 class="heading">Delicious meals, anytime, anywhere.</h1>
+                <a href="#signup" onclick="showForm()">Sign-up Now</a>
+            </div>
+        </section>
+        <section id="signup">
+            <h2 class="heading">Sign-up Form</h2>
+
+            <!-- Add your form here -->
+            <div id="signupForm" class="form-popup">
+                <form class="form-container" onsubmit="submitForm(); return false;">
+                    <!-- Form fields go here -->
+                    <h2 class="heading">Sign-up Form</h2>
+
+                    <label for="first"><b>First Name : </b></label>
+                    <input type="text" id="first" required>
+
+                    <label for="second"><b>Last Name : </b></label>
+                    <input type="text" id="second" required>
+
+                    <label for="email"><b>Email : </b></label>
+                    <input type="email" id="email" required>
+
+                    <label for="pwd"><b>Password : </b></label>
+                    <input type="password" id="pwd" minlength="8" maxlength="12" required>
+
+                    <label for="city"><b>City : </b></label>
+                    <input type="text" id="city" required><br>
+
+                    <label for="province"><b>Province : </b></label>
+                    <select id="province" required>
+                        <option value="Alberta">Ontatio</option>
+                        <option value="Alberta">Quebec</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="British Columbia">British Columbia</option>
+                    </select>
+
+                    <div class="button-container">
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

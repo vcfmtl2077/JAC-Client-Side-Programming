@@ -1,0 +1,83 @@
+main {
+    max-width: none;
+    padding: 0;
+}
+
+#hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 95vh;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
+}
+
+.text {
+    z-index: 1;
+    text-align: center;
+}
+
+.text a {
+    display: inline-block;
+    margin: 3em auto;
+    font-weight: 700;
+    padding: 0.75em 1em;
+    border-radius: 0.5em;
+    background: var(--btn-background);
+    /* importing from style.css */
+    color: var(--btn-color);
+    font-size: 1.25rem;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #f1f1f1;
+    z-index: 10;
+    background-color: #4881c9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    max-width: 90%;
+}
+
+.form-container {
+    background-color: #4881c9;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+
+.btn {
+    cursor: pointer;
+    padding: 0.5em 2em;
+
+}
