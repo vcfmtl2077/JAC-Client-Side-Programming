@@ -1,0 +1,55 @@
+table {
+    border-collapse: collapse;
+    width: 65%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+th {
+    padding: 1em;
+}
+
+td {
+    padding: 0.5em;
+}
+.btn {
+    cursor: pointer;
+    padding: 0.5em 2em;
+}
+.q2 {
+    display: inline;
+}
+#q2output {
+    display: flex;
+}
+.justify {
+    text-align: justify;
+}
+
+.q2result{
+    display: inline;
+}
+.q2result span{
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.q3 {
+    display: block;
+}
+.q3result span{
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.q4 {
+    display: block;
+}
+.q4result span{
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/q234.css">
+    <script src="js/app.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="asset/logo.png" alt="logo">
+    </header>
+    <!-- Question 2 part-->
+    <section>
+        <h1> Question 2:</h1>
+
+        <table>
+            <tr>
+                <th>Number of Chocolate Boxes</th>
+                <th>Given Discount</th>
+            </tr>
+            <tr>
+                <td>5-9</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>10-29</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <td>30-49</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>50 or more</td>
+                <td>50%</td>
+            </tr>
+        </table>
+
+        <div class="q2">
+            <label for="q2box"><b>Chocolate boxes : </b></label>
+            <input type="text" id="q2box" required>
+            <button name="cal" onclick="calCost()">CACULATE</button>
+        </div>
+        <div id="q2output">
+            <span for="q2output"><b>Output : </b></span>
+            <div class="q2result">
+                <div class="justify"><span id="q2totalCost"></span></div>
+                <div class="justify"><span id="q2discount"></span></div>
+                <div class="justify"><span id="q2finalCost"></span></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Question 3 part-->
+    <section>
+        <h1> Question 3:</h1>
+        <div class="q3">
+            <div><label for="q3first"><b>First Number : </b></label>
+                <input type="text" id="q3first" required>
+            </div>
+            <div><label for="q3second"><b>Second Number : </b></label>
+                <input type="text" id="q3second" required>
+            </div>
+
+            <div><button name="cal" onclick="calNumber()">CACULATE</button></div>
+        </div>
+        <div id="q3output">
+            <span><b>Output : </b></span>
+            <div class="q3result">
+                <div class="justify"><span id="q3result"></span></div>
+            </div>
+        </div>
+        
+        
+    </section>
+    <!-- Question 4 part-->
+    <section>
+        <h1> Question 4:</h1>
+        <div class="q4">
+            <div><label for="q4vcRoom"><b>Number of vacant rooms : </b></label>
+                <input type="text" id="q4vcRoom" required>
+            </div>
+            <div><label for="q4ocRoom"><b>Number of occupied rooms : </b></label>
+                <input type="text" id="q4ocRoom" required>
+            </div>
+
+            <div><label for="q4rsRoom"><b>Number of reserved rooms : </b></label>
+                <input type="text" id="q4rsRoom" required>
+            </div>
+            <div><button name="cal" onclick="calRoom()">CACULATE</button></div>
+        </div>
+        <div id="q4output">
+            <span><b>Output : </b></span>
+            <div class="q4result">
+                <div class="justify"><span id="q4totalroom"></span></div>
+                <div class="justify"><span id="q4vacantroom"></span></div>
+                <div class="justify"><span id="q4occupiedroom"></span></div>
+                <div class="justify"><span id="q4reservedroom"></span></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+
+
+
+</html>

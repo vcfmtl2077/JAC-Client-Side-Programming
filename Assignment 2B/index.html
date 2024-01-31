@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/app.css">
+    <script>
+        window.onload = function () {
+            const yearSelect = document.getElementById('year');
+            const daySelect = document.getElementById('day');
+
+            for (let i = 1975; i <= 1995; i++) {
+                let option = new Option(i, i);
+                yearSelect.add(option);
+            }
+
+            for (let i = 1; i <= 31; i++) {
+                let option = new Option(i, i);
+                daySelect.add(option);
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="asset/logo.png" alt="logo">
+    </header>
+    <section>
+        <div id="signupForm" class="form-popup">
+            <form class="form-container" action="welcome.html">
+                <h2 class="heading">Registration Form</h2>
+
+                <div class="form-group">
+                    <label for="first"><b>FIRST NAME : </b></label>
+                    <input type="text" id="first" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="second"><b>LAST NAME : </b></label>
+                    <input type="text" id="second" required>
+                </div>
+                <div class="form-group">
+                    <label for="day"><b>DATE OF BIRTH : </b></label>
+                    <label for="day">Day:</label>
+                    <select id="day" name="day">
+                    </select>
+
+                    <label for="month">Month:</label>
+                    <select id="month" name="month">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+
+                    <label for="year">Year:</label>
+                    <select id="year" name="year">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="telephone"><b>TELEPHONE : </b></label>
+                    <input type="number" id="telephone" minlength="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="male"><b>GENDER : </b></label>
+                    <label for="male"><b>Male : </b></label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female"><b>Female : </b></label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </div>
+                <div class="form-group">
+                    <label for="drawing"><b>HOBBIES : </b></label>
+                    <label for="drawing"><b>Drawing : </b></label>
+                    <input type="checkbox" id="drawing">
+                    <label for="singing"><b>Singing : </b></label>
+                    <input type="checkbox" id="singing">
+                    <label for="dancing"><b>Dancing : </b></label>
+                    <input type="checkbox" id="dancing">
+                    <label for="sketching"><b>Sketching : </b></label>
+                    <input type="checkbox" id="sketching">
+                    <label for="others"><b>Others : </b></label>
+                    <input type="checkbox" name="others">
+                    <input type="text" id="others"><br>
+                </div>
+                <div class="form-group">
+                    <label for="city"><b>City : </b></label>
+                    <input type="text" id="city" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="country"><b>Country : </b></label>
+                    <input type="text" id="country" autocomplete="country-name" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="others"><b>QUALIFICATION : </b></label>
+                    <table>
+                        <tr>
+                            <th>LEVEL</th>
+                            <th>SCHOOL</th>
+                            <th>GRADE</th>
+                            <th>YEAR</th>
+                        </tr>
+                        <tr>
+                            <td>1.DEC</td>
+                            <td  contenteditable="true"></td>
+                            <td  contenteditable="true"></td>
+                            <td  contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td>2.Diploma</td>
+                            <td  contenteditable="true"></td>
+                            <td  contenteditable="true"></td>
+                            <td  contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td>3.Certificate</td>
+                            <td  contenteditable="true"></td>
+                            <td  contenteditable="true"></td>
+                            <td  contenteditable="true"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="btn">Apply</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
